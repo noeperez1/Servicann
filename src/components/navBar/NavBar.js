@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import {CartWidget} from '../cartWidget/CartWidget'
 import logo from '../navBar/logoNombre.jpg'
- 
+
 
 export const NavBar = () => {
     
@@ -27,7 +27,7 @@ return(
                 <NavLink to='/category/Higiene'>Higiene</NavLink>
             </li>
             <li>
-                <NavLink to='/cart'>Carrito
+                <NavLink to='/cart'> 
                     <CartWidget/>
                 </NavLink>
             </li>

@@ -4,10 +4,10 @@ import Card from "react-bootstrap/Card";
 import CardGroup from "react-bootstrap/CardGroup";
 
 export const Item = ({ data }) => {
+    console.log(data)
     return (
     <>
         <CardGroup>
-        <Link to={`/product/${data.id}`}>
             <Card>
             <Card.Img variant="top" src={data.image} />
             <Card.Body>
@@ -16,9 +16,11 @@ export const Item = ({ data }) => {
                 <p>Precio: {data.price}</p>
                 </Card.Text>
             </Card.Body>
-            <Card.Footer>{data.description}</Card.Footer>
+            <Card.Footer>{data.description}
+            <Link to={`/product/${data.id}`}>
+            <p>Ver detalle del producto</p></Link>
+            </Card.Footer>
             </Card>
-        </Link>
         </CardGroup>
 
     </>

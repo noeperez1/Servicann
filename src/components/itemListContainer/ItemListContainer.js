@@ -8,7 +8,6 @@ export const ItemListContainer = () => {
     const [data, setData] = useState([]);
     const {categoryId} = useParams();
 
-
     useEffect(()=>{
         const querydb = getFirestore();
         const queryCollection= collection(querydb, 'listaProductos');
@@ -20,7 +19,6 @@ export const ItemListContainer = () => {
             getDocs(queryCollection)
                 .then(res=> setData(res.docs.map(res=>({id: res.id, ...res.data()}))))
         }
-        
     },[categoryId]);
     
     return(

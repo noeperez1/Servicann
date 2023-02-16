@@ -21,7 +21,7 @@ root.render(
     <Routes>
           <Route exact path='/' element={<ItemListContainer/>}></Route>
           <Route exact path='/products' element={<ItemListContainer greeting="Lista de productos"/>}></Route>
-          <Route exact path='/product/:productId' element={<ItemDetailContainer/>}></Route>
+          <Route exact path='/products/:productId' element={<ItemDetailContainer/>}></Route>
           <Route exact path='/category/:categoryId' element={<ItemListContainer/>}></Route>
           <Route exact path='/cart' element={<Cart/>}></Route>
     </Routes>
