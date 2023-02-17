@@ -1,0 +1,78 @@
+.Card{
+    border: none;
+    margin: 20px;
+}
+
+.card-title{
+    font-size: 23px;
+    font-family:unset;
+    color: #888;
+    font-weight:300;
+
+    width: max-content;
+    text-transform:uppercase;
+    text-decoration: underline solid 1px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.card-price{
+    font-size: 20px;
+    font-family:unset;
+    color: #888;
+    font-weight:500;
+
+    width: max-content;
+    margin-left: 25px;
+    margin-top: 5px;
+}
+
+.card-description{
+    font-size: 15px;
+    font-family:unset;
+    color: #888;
+    font-weight:500;
+
+    width: max-content;
+    margin-left: 25px;
+    margin-top: 5px;
+
+}
+
+.Link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family:unset;
+    font-weight: 100;
+    color: #888;
+    font-size: 10px;
+
+    width:max-content ;
+    margin: auto;
+    background-color: aliceblue;
+    padding: 8px;
+    border-radius: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.Link:hover{
+    font-family:unset;
+    font-weight: lighter;
+    color: #888;
+    font-size: 12px;
+
+    padding: 11px;
+    border-bottom: solid 2px  rgb(178, 211, 240);
+    border-right: solid 2px  rgb(178, 211, 240);
+}
+
+.bi-arrow-bar-right{
+    font-size: 17px;
+}
+
+.footer-card{
+    background-color: aliceblue;
+}

@@ -1,31 +1,55 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import {ItemList} from '../itemList/ItemList'
+//Components
+import {ItemList} from '../itemList/ItemList';
+//Firebase
 import {getFirestore, collection, getDocs, where, query} from 'firebase/firestore'; 
 
-
+//Logic
 export const ItemListContainer = () => {
     const [data, setData] = useState([]);
+    const [loading, setLoading] = useState(true)
     const {categoryId} = useParams();
 
-    useEffect(()=>{
-        const querydb = getFirestore();
-        const queryCollection= collection(querydb, 'listaProductos');
-        if(categoryId){
-            const queryFilter = query(queryCollection, where('category', '==', categoryId));
-            getDocs(queryFilter).then(res=> setData(res.doc.map(res=>({id: res.id, ...res.data()}))))
-        }
-        else{
-            getDocs(queryCollection)
-                .then(res=> setData(res.docs.map(res=>({id: res.id, ...res.data()}))))
-        }
-    },[categoryId]);
+    useEffect(() => {
+        const getData = async () => {
+        const querydb= getFirestore()
     
+        const queryRef = !categoryId
+        
+            ? collection(querydb, "listaProductos")
+        
+            : query(
+                collection(querydb, "listaProductos"),
+                where("category", "==", categoryId)
+                    );
+        
+        const response = await getDocs(queryRef);
+        
+        const productos = response.docs.map((doc) => {
+            const newProduct = {
+                ...doc.data(),
+                id: doc.id,
+            };
+    
+            return newProduct;
+                });
+            setTimeout(() => {
+                setData(productos);
+                setLoading(false)
+                }, 1000)
+            };
+
+            getData();
+        
+        }, [categoryId])
+
     return(
         <div>
-            <ItemList data={data}/>
+            <ItemList data={data} loading={loading}/>
         </div>
     )
 }
 
+//Export
 export default ItemListContainer

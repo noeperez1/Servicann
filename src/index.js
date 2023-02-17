@@ -1,15 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import reportWebVitals from './reportWebVitals';
+//Routes
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import './services/firebase';
+//Components
 import { ItemListContainer } from './components/itemListContainer/ItemListContainer';
+import {ItemDetailContainer} from './components/itemDetailContainer/ItemDetailContainer'
 import {Cart} from './components/cart/Cart'
 import {NavBar} from './components/navBar/NavBar'
 import {Footer} from './components/footer/Footer'
-import {ItemDetailContainer} from './components/itemDetailContainer/ItemDetailContainer'
+
+//Context
 import {CartProvider} from './context/Context';
+//Firebase
+import './services/firebase';
+//Style
+import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

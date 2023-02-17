@@ -1,0 +1,18 @@
+.footer{
+    background-color: aliceblue;
+    margin-top: 50px;
+    border-top: solid 1px rgb(200, 222, 241);
+}
+
+.content{
+    display: flex;
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 15px;
+
+    font-size: 11px;
+    text-decoration: underline 1px;
+    color: #888;
+}

@@ -1,0 +1,74 @@
+.Cart-div{
+    background-color: aliceblue ;
+    margin: 25px;
+    border-radius: 15px;
+}
+
+.Cart-price{
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #888;
+    text-transform: uppercase;
+    font-weight:lighter;
+    text-decoration: underline solid 1px;
+
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: max-contet;
+    border-radius: 15px;
+    border-bottom: solid rgb(178, 211, 240);
+    border-right: solid 2px rgb(178, 211, 240);
+}
+
+.carrito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 100px;
+    padding: 25px;
+    background-color: aliceblue;
+    border-radius: 50px;
+    border-bottom: solid 2px rgb(178, 211, 240);
+
+    font-family:unset;
+    font-weight: lighter;
+    color: #888;
+    font-size: 25px;
+}
+
+
+.Link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family:unset;
+    font-weight: lighter;
+    color: #888;
+    font-size: 17px;
+
+    width:max-content ;
+    margin: auto;
+    background-color: aliceblue;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+.Link:hover{
+    font-family:unset;
+    font-weight: lighter;
+    color: #888;
+    font-size: 20px;
+
+    padding: 11px;
+    border-bottom: solid 2px  rgb(178, 211, 240);
+    border-right: solid 2px  rgb(178, 211, 240);
+}
+
+.bi-arrow-bar-left{
+    font-size: 8px;
+}

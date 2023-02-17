@@ -1,0 +1,27 @@
+.ItemCount{
+    background-color: aliceblue;
+    width: max-content;
+    border-radius: 15px;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+button{
+    margin: 20px;
+    border: 1px;
+    border-radius: 10px;
+    background-color: rgb(200, 222, 241);
+
+    font-size: 15px;
+    color: #acacac;
+}
+
+button:hover{
+    border-bottom: 1px solid  rgb(189, 220, 247) ;
+    border-right: 1px solid rgb(189, 220, 247);
+    padding: 5px;
+}

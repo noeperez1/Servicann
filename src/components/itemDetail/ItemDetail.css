@@ -1,0 +1,73 @@
+.Link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family:unset;
+    font-weight: lighter;
+    color: #888;
+    font-size: 17px;
+
+    width:max-content ;
+    margin: auto;
+    background-color: aliceblue;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+.Link:hover{
+    font-family:unset;
+    font-weight: lighter;
+    color: #888;
+    font-size: 20px;
+
+    padding: 11px;
+    border-bottom: solid 2px  rgb(178, 211, 240);
+    border-right: solid 2px  rgb(178, 211, 240);
+}
+
+.img{
+    padding: 50px;
+    width: 450px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.title{
+    font-size: 25px;
+    font-family:unset;
+    color: #888;
+    font-weight:300;
+
+    background-color: aliceblue;
+    width: max-content;
+    text-transform:uppercase;
+    text-decoration: underline solid 1px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.description{
+    font-size: 22px;
+    font-family:unset;
+    color: #888;
+    font-weight: 400;
+    margin-left: 35px;
+    margin-top: 15px;
+}
+
+.price{
+    font-size: 22px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #676767;
+    font-weight: 600;
+    
+    margin-left: 35px;
+    margin-top: 15px;
+}
+

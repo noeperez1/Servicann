@@ -1,18 +1,23 @@
 import React from "react";
+//Context
 import { useCartContext } from "../../context/Context";
+//Styles
+import './CartWidget.css'
 
-
+//Logic
 export const CartWidget = () => {
-    const {totalProducts} = useCartContext()
+    const {cart} = useCartContext()
 
     return(
-        <>
-            <i className="bi bi-cart">
-                <span>{totalProducts() || ''}</span>
-            </i>
-        
-        </>
+        <div className="div-CartW">
+        <i className="bi bi-cart"/>
+        <span>
+            {cart.length}
+        </span>
+        </div>
     )
 }
 
+//Export
 export default CartWidget
+

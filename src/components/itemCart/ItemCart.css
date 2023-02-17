@@ -1,0 +1,56 @@
+.div{
+    display: flex;
+    height: 500px;
+}
+
+.div2{
+    flex: auto;
+}
+
+.img-cart{
+    margin: 30px;
+    flex: auto;
+    width: 50px;
+}
+
+.img-cart:hover{
+    border-radius: 15px;
+}
+
+.title{
+    margin: auto;
+    margin-top: 20px;
+}
+
+.quantity{
+    margin: 15px 15px 15px 30px ;
+    font-size: 20px;
+    font-family:unset ;
+    color: #888;
+    font-weight: 300;
+}
+
+.subtotal{
+    margin: 15px 15px 15px 30px ;
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    color: #888;
+    font-weight: 500;
+    text-decoration: underline 1px ;
+    text-transform: uppercase;
+}
+
+.button{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button2{
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

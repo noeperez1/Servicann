@@ -1,6 +1,9 @@
 import React, { useState } from "react";
+//Styles
+import './ItemCount.css'
 
-export const ItemCount = (initial, stock, onAdd) => {
+//Logic
+export const ItemCount = ({initial, stock, onAdd}) => {
     const [count, setCount] = useState(initial)
 
     const decrementar = () => {
@@ -12,7 +15,7 @@ export const ItemCount = (initial, stock, onAdd) => {
     }
 
     return(
-        <div>
+        <div className="ItemCount">
             <button disabled={count <= 1} onClick={decrementar}> - </button>
             <span>{count}</span>
             <button disabled={count >= stock} onClick={incrementar}> + </button>
@@ -24,4 +27,5 @@ export const ItemCount = (initial, stock, onAdd) => {
     )
 }
 
+//Export
 export default ItemCount

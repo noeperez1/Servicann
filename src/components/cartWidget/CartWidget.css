@@ -1,0 +1,12 @@
+.div-CartW{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+}
+i{
+    
+}
+
+.bi{
+    font-size: 25px;
+}
